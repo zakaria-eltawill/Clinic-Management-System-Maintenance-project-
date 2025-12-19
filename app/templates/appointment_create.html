@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block title %}Create Appointment - Clinic Management System{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="card">
+            <div class="card-header bg-white">
+                <h3 class="mb-0">
+                    <i class="bi bi-calendar-plus"></i> Create New Appointment
+                </h3>
+            </div>
+            <div class="card-body">
+                {% if not patients %}
+                <div class="alert alert-warning">
+                    <i class="bi bi-exclamation-triangle"></i> 
+                    No patients available. Please <a href="{{ url_for('patient_add') }}">add a patient</a> first.
+                </div>
+                {% endif %}
+
+                <form method="POST" action="{{ url_for('appointment_create') }}" {% if not patients %}onsubmit="return false;"{% endif %}>
+                    <div class="mb-3">
+                        <label for="patient_id" class="form-label">
+                            <i class="bi bi-person"></i> Patient <span class="text-danger">*</span>
+                        </label>
+                        <select class="form-select" id="patient_id" name="patient_id" required {% if not patients %}disabled{% endif %}>
+                            <option value="">Select a patient...</option>
+                            {% for p in patients %}
+                            <option value="{{ p.id }}" {% if patient_id and patient_id == p.id %}selected{% endif %}>
+                                #{{ p.id }} - {{ p.name }} (Age: {{ p.age }}, Phone: {{ p.phone }})
+                            </option>
+                            {% endfor %}
+                        </select>
+                        {% if not patients %}
+                        <div class="form-text text-danger">No patients available. Add a patient first.</div>
+                        {% else %}
+                        <div class="form-text">Select the patient for this appointment</div>
+                        {% endif %}
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="date" class="form-label">
+                            <i class="bi bi-calendar"></i> Appointment Date <span class="text-danger">*</span>
+                        </label>
+                        <input type="date" class="form-control" id="date" name="date" 
+                               value="{{ date if date else '' }}" 
+                               min="{{ today if today else '' }}" required {% if not patients %}disabled{% endif %}>
+                        <div class="form-text">Select the date for the appointment (YYYY-MM-DD format)</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="description" class="form-label">
+                            <i class="bi bi-card-text"></i> Description <span class="text-danger">*</span>
+                        </label>
+                        <textarea class="form-control" id="description" name="description" rows="4" 
+                                  placeholder="Enter appointment description (e.g., General Checkup, Follow-up, etc.)" 
+                                  required {% if not patients %}disabled{% endif %}>{{ description if description else '' }}</textarea>
+                        <div class="form-text">Minimum 3 characters, maximum 500 characters</div>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <a href="{{ url_for('list_appointments') }}" class="btn btn-secondary">
+                            <i class="bi bi-arrow-left"></i> Cancel
+                        </a>
+                        <button type="submit" class="btn btn-primary" {% if not patients %}disabled{% endif %}>
+                            <i class="bi bi-check-circle"></i> Create Appointment
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block extra_js %}
+<script>
+    // Set minimum date to today
+    document.addEventListener('DOMContentLoaded', function() {
+        const dateInput = document.getElementById('date');
+        if (dateInput) {
+            const today = new Date().toISOString().split('T')[0];
+            dateInput.setAttribute('min', today);
+        }
+    });
+</script>
+{% endblock %}
+{% endblock %}
