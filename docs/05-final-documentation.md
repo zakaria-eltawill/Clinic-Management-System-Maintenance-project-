@@ -78,6 +78,45 @@ After refactoring, the system features:
 
 ---
 
+## Project Management & Collaboration
+
+### ClickUp Project Management Tool
+
+**ClickUp** was used as the primary project management platform to organize and track all work:
+
+- **Workspace Organization:**
+  - 8 EPIC folders (Code Quality, Architecture, Testing, UI/UX, Features, Documentation, Security, Project Management)
+  - 4 Sprint lists per EPIC (Sprint 1-4)
+  - 47 total tasks organized across sprints
+
+- **Task Management:**
+  - Each task included detailed descriptions, acceptance criteria, and subtasks
+  - Custom fields: Story Points, Priority, PBI Number, Maintenance Type, Estimated Hours, Deliverables
+  - Tasks assigned to specific team members with clear ownership
+
+- **Sprint Organization:**
+  - Sprint 1: 9 tasks (10 story points) - Analysis & Planning
+  - Sprint 2: 12 tasks (25 story points) - Refactoring & Code Quality
+  - Sprint 3: 13 tasks (25 story points) - Features & Testing
+  - Sprint 4: 13 tasks (20 story points) - Documentation & Metrics
+
+- **Team Collaboration:**
+  - Board views organized by team member
+  - Sprint boards showing task progress (Backlog → To Do → In Progress → Done)
+  - Dashboard with sprint progress, team workload, and story point distribution
+  - Clear visibility of who is working on what
+
+- **Scrum Master Activities:**
+  - Created and maintained product backlog in ClickUp
+  - Facilitated sprint planning sessions
+  - Tracked sprint progress and team velocity
+  - Managed task assignments and dependencies
+  - Monitored team workload and sprint goals
+
+**Evidence:** Complete ClickUp workspace with all tasks, assignments, sprint organization, and progress tracking documented.
+
+---
+
 ## Team Structure & Responsibilities
 
 ### Team Members
@@ -85,6 +124,7 @@ After refactoring, the system features:
 #### Zakaria Eltawill - Team Lead / Scrum Master
 **Responsibilities:**
 - Project coordination and sprint facilitation
+- ClickUp workspace setup and maintenance
 - Architecture decisions and code structure
 - Repository pattern implementation
 - Code structure refactoring (MVC separation)
@@ -94,6 +134,7 @@ After refactoring, the system features:
 - Presentation preparation
 
 **Key Contributions:**
+- Created ClickUp workspace and organized all sprints
 - Created analysis.md and product backlog
 - Implemented repository pattern
 - Separated code into MVC structure
@@ -160,25 +201,33 @@ After refactoring, the system features:
 **Goal:** Understand codebase, identify issues, create backlog
 
 #### Tasks Completed
+- ✅ Set up ClickUp workspace for project management
 - ✅ Comprehensive codebase analysis
 - ✅ Identified 27 issues across 8 categories
-- ✅ Created product backlog with 27 items
+- ✅ Created product backlog with 27 items in ClickUp
 - ✅ Calculated initial metrics (LOC, complexity, FP)
-- ✅ Planned 4-sprint Agile workflow
+- ✅ Planned 4-sprint Agile workflow in ClickUp
 - ✅ Set up Git repository structure
 - ✅ Created development environment
 
 #### Deliverables
+- ClickUp workspace with all tasks organized
 - `analysis.md` - Complete codebase analysis
 - `PRODUCT_BACKLOG.md` - 27 prioritized items
 - `SPRINT_PLANS.md` - Detailed sprint plans
 - Initial metrics baseline
 
 #### Team Contributions
-- **Zakaria:** Analysis, backlog creation, sprint planning
+- **Zakaria:** ClickUp setup, analysis, backlog creation, sprint planning
 - **Mohamed:** Metrics calculation, environment setup
 - **Ali Ramadan:** Duplication analysis, testing strategy
 - **Ali Boujuari:** UI analysis, sprint planning document
+
+#### ClickUp Organization
+- 9 tasks created and assigned in ClickUp
+- Tasks organized by EPICs and Sprint 1
+- Story points tracked (10 total)
+- All tasks visible in ClickUp board view
 
 ---
 
@@ -187,6 +236,7 @@ After refactoring, the system features:
 **Goal:** Remove duplication, implement repository pattern, improve structure
 
 #### Tasks Completed
+- ✅ Tracked all tasks in ClickUp Sprint 2 board
 - ✅ Removed all code duplication (4 duplicate functions)
 - ✅ Implemented repository pattern (eliminated global state)
 - ✅ Created data models (Patient, Appointment)
@@ -210,6 +260,13 @@ After refactoring, the system features:
 - **Ali Ramadan:** Input validation, type hints, naming
 - **Ali Boujuari:** UI foundation (base template)
 
+#### ClickUp Organization
+- 12 tasks tracked in ClickUp Sprint 2
+- Tasks assigned to team members with clear ownership
+- Story points monitored (25 total)
+- Progress tracked through ClickUp board views
+- Task dependencies managed in ClickUp
+
 #### Key Changes
 1. **Repository Pattern:** Eliminated 3 global variables
 2. **Code Duplication:** Removed 4 duplicate functions
@@ -223,6 +280,7 @@ After refactoring, the system features:
 **Goal:** Add unit tests, implement features, complete UI improvements
 
 #### Tasks Completed
+- ✅ Managed all tasks through ClickUp Sprint 3 board
 - ✅ Set up pytest testing infrastructure
 - ✅ Created comprehensive test suite (43 test functions)
 - ✅ Achieved 80%+ test coverage
@@ -260,6 +318,7 @@ After refactoring, the system features:
 **Goal:** Finalize documentation, calculate metrics, prepare presentation
 
 #### Tasks Completed
+- ✅ Finalized all tasks in ClickUp Sprint 4 board
 - ✅ Calculated final metrics (before/after comparison)
 - ✅ Created comprehensive README
 - ✅ Documented all refactoring changes (refactor log)
@@ -267,12 +326,14 @@ After refactoring, the system features:
 - ✅ Created user manual
 - ✅ Final code review and polish
 - ✅ Prepared presentation materials
+- ✅ Exported ClickUp workspace for evidence
 
 #### Deliverables
 - `README.md` - Complete project documentation
 - `REFACTOR_LOG.md` - All refactoring changes documented
 - `METRICS_REPORT.md` - Before/after metrics
 - `FINAL_REPORT.md` - This comprehensive report
+- ClickUp workspace with complete task history
 - User manual
 - Presentation materials
 
@@ -281,6 +342,13 @@ After refactoring, the system features:
 - **Mohamed:** Metrics report, README, API documentation
 - **Ali Ramadan:** Evaluation report, test documentation
 - **Ali Boujuari:** User manual, presentation visuals
+
+#### ClickUp Organization
+- 13 tasks completed in ClickUp Sprint 4
+- All tasks marked as "Done" in ClickUp
+- Final sprint metrics exported from ClickUp
+- Complete project history documented in ClickUp
+- Team contributions visible in ClickUp reports
 
 ---
 

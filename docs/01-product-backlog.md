@@ -5,9 +5,23 @@
 
 ---
 
+## Project Management
+
+**ClickUp** was used as the primary tool for managing this product backlog and organizing all work:
+
+- All 27 Product Backlog Items (PBIs) were created as tasks in ClickUp
+- Tasks organized by 8 EPICs (folders) and 4 Sprints (lists)
+- Each PBI includes: Story Points, Priority, Acceptance Criteria, Assignee
+- Sprint planning and task assignment managed through ClickUp
+- Progress tracked through ClickUp board views and dashboards
+
+**Evidence:** Complete ClickUp workspace showing all backlog items, sprint organization, task assignments, and progress tracking.
+
+---
+
 ## Backlog Overview
 
-This document contains all identified issues, improvements, and feature requests organized by priority and category.
+This document contains all identified issues, improvements, and feature requests organized by priority and category. All items were tracked and managed in ClickUp throughout the project.
 
 ---
 

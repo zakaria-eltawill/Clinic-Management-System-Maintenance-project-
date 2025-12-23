@@ -5,6 +5,22 @@
 
 ---
 
+## Project Management Tool
+
+**ClickUp** was used as the primary project management tool to organize and track all work throughout the project:
+
+- **Workspace Structure:** Organized by EPICs (8 folders) and Sprints (4 lists per EPIC)
+- **Task Management:** All 47 tasks created with detailed descriptions, acceptance criteria, and subtasks
+- **Team Collaboration:** Tasks assigned to team members with clear ownership
+- **Sprint Tracking:** Each sprint had its own board view showing task progress
+- **Custom Fields:** Story Points, Priority, PBI Number, Maintenance Type, Estimated Hours, Deliverables
+- **Progress Monitoring:** Dashboard views showing sprint progress, team workload, and story point distribution
+- **Evidence:** Complete task history, assignments, and sprint organization documented in ClickUp
+
+This tool enabled effective Scrum Master leadership, clear task distribution, and transparent progress tracking across all 4 sprints.
+
+---
+
 ## Sprint Overview
 
 | Sprint | Duration | Focus Area | Story Points |

@@ -222,6 +222,19 @@ All documentation is available in the `docs/` folder:
 
 Presentation materials are in the `presentation/` folder.
 
+## 📊 Project Management
+
+**ClickUp** was used as the primary project management tool throughout this project:
+
+- **Workspace Organization:** 8 EPIC folders × 4 Sprint lists = 32 organized lists
+- **Task Management:** 47 tasks with detailed descriptions, acceptance criteria, and subtasks
+- **Team Collaboration:** Tasks assigned to team members with clear ownership
+- **Sprint Tracking:** Board views showing progress (Backlog → To Do → In Progress → Done)
+- **Custom Fields:** Story Points, Priority, PBI Number, Maintenance Type, Estimated Hours
+- **Progress Monitoring:** Dashboard with sprint progress, team workload, and metrics
+
+This tool enabled effective Scrum Master leadership, clear task distribution, and transparent progress tracking across all 4 sprints.
+
 ## 🛠️ Development
 
 ### Adding New Features
